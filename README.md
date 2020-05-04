@@ -17,5 +17,3 @@ My very own personal website. Developed as a first homework for binary studio ac
 ## Links
 * [SourceCode](https://github.com/MaksymSlobodianyk/homepage.git)
 * [Issue tracker](https://github.com/MaksymSlobodianyk/homepage/issues)
-
-🧙Hocus-pocus!
