@@ -1,13 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <title>Résumé</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Maksym Slobodianyk - Résumé</title>
     <link rel="stylesheet" href="https://volodymyrkushnir.com/assets/stylesheets/base.css">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192"
+          href="./assets/images/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512"
+          href="./assets/images/favicon-512x512.png">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="This is just a résumé." name="subject">
+    <meta content="My very own personal website." name="description">
+    <meta content="index,follow" name="robots">
+    <meta content="index,follow" name="googlebot">
+    <meta content="nositelinkssearchbox" name="google">
+    <meta content="notranslate" name="google">
+
+    <link href="https://www.facebook.com/max.slobodianyk" rel="me" type="text/html">
+    <link href="mailto:maxslobodianyk@gmail.com" rel="me">
+    <link href="tel:+380953050911" rel="me">
+    <meta content="website" property="og:type">
+    <meta content="Résumé" property="og:title">
+    <meta content="— Hello! I study at IT faculty of Kyiv Mohyla academy for software engineering
+                                    program. I’m improving myself as a Java and Angular developer."
+          property="og:description">
+    <meta content="./assets/images/avatar.gif" property="og:image">
+    <meta content="en_US" property="og:locale">
+    <style>
+        /* Tags */
+        [data-tag] > *:first-child:after {
+            font-size: 0.6em;
+            line-height: 1rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            display: inline-block;
+            padding: 0em 0.75em;
+            border-radius: 1px;
+            height: 1rem;
+            margin-left: 0.5em;
+            margin-top: -1px;
+            vertical-align: middle;
+            box-shadow: inset 0 0 0 1px;
+            opacity: 0.5;
+            transition: opacity 0.2s linear;
+        }
+
+        [data-tag]:hover > *:first-child:after {
+            color: #ffffff;
+            opacity: 1;
+            box-shadow: none;
+        }
+
+        [data-tag="work"] > *:first-child:after {
+            content: "work";
+        }
+
+        [data-tag="pet-project"] > *:first-child:after {
+            content: "pet-project";
+        }
+
+        [data-tag="hackathon"] > *:first-child:after {
+            content: "hackathon";
+        }
+
+        [data-tag="success"] > *:first-child:after {
+            content: "success";
+        }
+
+        [data-tag="work"]:hover > *:first-child:after {
+            background: #F2B33D;
+        }
+
+        [data-tag="pet-project"]:hover > *:first-child:after {
+            background: #33A665;
+        }
+
+        [data-tag="hackathon"]:hover > *:first-child:after {
+            background: #009BFF;
+        }
+
+        [data-tag="success"]:hover > *:first-child:after {
+            background: #C80000;
+        }
+    </style>
 </head>
 <body>
-<!-- <dialog> -->
-<!-- <header> -->
+<header>
+    <div class="credits">
+        Built using <a href="https://volodymyrkushnir.com/" rel="external"><strong>volodymyrkushnir.com</strong></a>
+        🧰
+    </div>
+</header>
 <main>
     <article>
         <div class="page" style="border-color:#02590F;">
@@ -15,7 +100,7 @@
                 <div class="row">
                     <div class="three wide center aligned column">
                       <div class="avatar-wrapper">
-                        <object class="avatar" data="./assets/images/avatar.svg" role="img" aria-label="My profile picture"></object>
+                        <object class="avatar" data="./assets/images/image2vector.svg" role="img" aria-label="My profile picture"></object>
                       </div>
                     </div>
                     <div class="thirteen wide column">
@@ -118,7 +203,7 @@
                         <h6>CODING EXPERIENCE</h6>
                         <ul class="timeline">
 
-                            <li class="highlighted">
+                            <li class="highlighted" data-tag="pet-project">
                                 <p><em>February – 3<sup>rd</sup> May 2020 </em></p>
                                 <p><strong>Our 7-person team developed MVP of the service for booking rooms in National
                                     University of
@@ -129,8 +214,8 @@
                                 <ul>
                                     <li class="details">
                                         <input type="checkbox" id="project-4-responsibilities">
-                                        <label for="project-4-responsibilities" class="summary">Чим я займався на
-                                            проекті:</label>
+                                        <label for="project-4-responsibilities" class="summary">My responsibilities at
+                                            the project:</label>
                                         <div class="labels">
                                             <ul>
                                                 <li>Created tasks for a frontend team</li>
@@ -200,7 +285,7 @@
                             </li>
 
 
-                            <li class="highlighted">
+                            <li class="highlighted" data-tag="pet-project">
                                 <p><em>February – 3<sup>rd</sup> May 2020 </em></p>
                                 <p><strong>Our 7-person team developed MVP of the service of giving permission to users
                                     of other services of National University of
@@ -257,9 +342,9 @@
                             </li>
 
 
-                            <li class="highlighted">
+                            <li class="highlighted" data-tag="hackathon">
                                 <p><em>December 2019</em></p>
-                                <p><strong>As a part of three person team? won hackathon organized by Microsoft Student
+                                <p><strong>As a part of three person team, won hackathon organized by Microsoft Student
                                     Partners in
                                     developing game</strong></p>
                                 <ul>
@@ -269,7 +354,7 @@
                             </li>
 
 
-                            <li class="highlighted">
+                            <li class="highlighted" data-tag="pet-project">
                                 <p><em>summer 2019</em></p>
                                 <p><strong>Remake my first project using new knowledge</strong></p>
                                 <p><em>The most achievement for the project:</em> developed function of forming month
@@ -313,7 +398,7 @@
                                 </ul>
                             </li>
 
-                            <li class="highlighted">
+                            <li class="highlighted" data-tag="pet-project">
                                 <p><em>August 2018</em></p>
                                 <p><strong>Developed my first pet project as a VBA app with MS Excel document above
                                     (System which collect information about students of center)</strong></p>
@@ -355,12 +440,12 @@
                         <h6>BACK THEN</h6>
                         <ul class="timeline">
                             <li>
-                                <p><em>17<sup>th</sup> August 2018 &ndash; present</em></p>
+                                <p data-tag="work"><em>17<sup>th</sup> August 2018 &ndash; present</em></p>
                                 <p><strong>System Administrator at centre of after-school education</strong></p>
                                 <ul>
                                     <li class="details">
                                         <input type="checkbox" id="work">
-                                        <label for="work" class="summary">Taking this position I am a &#x1f9b8;<sup>(in
+                                        <label for="work" class="summary">Taking this position I am a &#x1f9b8;&#x200D;&#x2642;&#xFE0F;<sup>(in
                                             minds of my colleagues)</sup>, but in fact:</label>
                                         <div>
                                             <ul>
@@ -395,7 +480,7 @@
                                     <li>Obtain an experience of being in a charge of 30-person team</li>
                                     <li class="details">
                                         <input type="checkbox" id="successful-projects">
-                                        <label for="successful-projects" class="summary">We created some cool campaigns:&#x1f60D;</label>
+                                        <label for="successful-projects" class="summary">We created some cool campaigns:&#x1f643;</label>
                                         <div>
                                             <ul>
                                                 <li>Helped militaries and volunteers</li>
@@ -453,7 +538,7 @@
                             </li>
 
                             <li>
-                                <p><em>17<sup>th</sup> May 2001</em></p>
+                                <p data-tag="success"><em>17<sup>th</sup> May 2001</em></p>
                                 <p><strong>Was born </strong> in <strong><a href="https://goo.gl/maps/6gNdfLE4xwWU1UcJ6"
                                                                             rel="external">Kyiv</a></strong></p>
                             </li>
@@ -481,10 +566,17 @@
                             <p class="tags small">AMBITIOUS ENTHUSIASTIC EXPLORER STRAIGHTFORWARD LEADERSHIP PEDANTIC
                                 CONFIDENT CONSISTENT CHALLENGING STORYTELLER EASY GOING</p>
                         </section>
+                        <!-- Adore -->
+                        <section>
+                            <h3>Adore&#x1f60D;</h3>
+
+                            <p class="tags small">WAISTING TIME LOOKING AT COLORS ON <a href="https://color.adobe.com/explore"
+                                                      rel="external">ADOBE COLOR</a></p>
+                        </section>
                         <!-- Likes -->
                         <section>
                             <h3>Likes&#x1f44d;</h3>
-                            <p class="tags small">HUMOUR PATIENCE DOGS MOVIES METRO DETECTIVE BOOKS HIKING CYCLING
+                            <p class="tags small">GREEN HUMOUR PATIENCE DOGS MOVIES METRO DETECTIVE BOOKS HIKING CYCLING
                                 READING LOW COST TRAVELING TED</p>
                         </section>
                         <!-- Dislikes -->
@@ -502,6 +594,23 @@
                         <section>
                             <h3>Education</h3>
                             <ul class="timeline">
+                                <li>
+                                    <p><em>Day to day</em></p>
+                                    <p class="tags bulleted">
+                                        <span class="tag"><a
+                                                href="https://www.pluralsight.com/"
+                                                rel="external">PluralSight</a></span><span class="tag"><a
+                                            href="https://ru.coursera.org/"
+                                            rel="external">Coursera</a></span>
+                                        <span class="tag"><a
+                                                href="https://www.udemy.com/"
+                                                rel="external">Udemy</a></span>
+                                        <span class="tag"><a href="https://www.w3schools.com/"
+                                                             rel="external">W3Schools</a></span><span
+                                            class="tag"><a href="https://www.freecodecamp.org/"
+                                                           rel="external">freeCodeCamp</a></span>
+                                    </p>
+                                </li>
                                 <li>
                                     <div><em>1<sup>st</sup> September 2018 &ndash; present</em></div>
                                     <div><strong>Study </strong> <strong>software engineering</strong> at <a
@@ -528,6 +637,5 @@
     </article>
 </main>
 <!-- <footer> -->
-<!-- <script> -->
 </body>
 </html>
