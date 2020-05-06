@@ -22,19 +22,44 @@
             opacity: 0.5;
             transition: opacity 0.2s linear;
         }
+
         [data-tag]:hover > *:first-child:after {
             color: #ffffff;
             opacity: 1;
             box-shadow: none;
         }
-        [data-tag="work"] > *:first-child:after { content: "work"; }
-        [data-tag="pet-project"] > *:first-child:after { content: "pet-project"; }
-        [data-tag="hackathon"] > *:first-child:after { content: "hackathon"; }
-        [data-tag="success"] > *:first-child:after { content: "success"; }
-        [data-tag="work"]:hover > *:first-child:after { background: #F2B33D; }
-        [data-tag="pet-project"]:hover > *:first-child:after { background: #33A665; }
-        [data-tag="hackathon"]:hover > *:first-child:after { background: #009BFF; }
-        [data-tag="success"]:hover > *:first-child:after { background: #C80000; }
+
+        [data-tag="work"] > *:first-child:after {
+            content: "work";
+        }
+
+        [data-tag="pet-project"] > *:first-child:after {
+            content: "pet-project";
+        }
+
+        [data-tag="hackathon"] > *:first-child:after {
+            content: "hackathon";
+        }
+
+        [data-tag="success"] > *:first-child:after {
+            content: "success";
+        }
+
+        [data-tag="work"]:hover > *:first-child:after {
+            background: #F2B33D;
+        }
+
+        [data-tag="pet-project"]:hover > *:first-child:after {
+            background: #33A665;
+        }
+
+        [data-tag="hackathon"]:hover > *:first-child:after {
+            background: #009BFF;
+        }
+
+        [data-tag="success"]:hover > *:first-child:after {
+            background: #C80000;
+        }
     </style>
 </head>
 <body>
@@ -467,6 +492,23 @@
                         <section>
                             <h3>Education</h3>
                             <ul class="timeline">
+                                <li>
+                                    <p><em>Day to day</em></p>
+                                    <p class="tags bulleted">
+                                        <span class="tag"><a
+                                                href="https://www.pluralsight.com/"
+                                                rel="external">PluralSight</a></span><span class="tag"><a
+                                            href="https://ru.coursera.org/"
+                                            rel="external">Coursera</a></span>
+                                        <span class="tag"><a
+                                                href="https://www.udemy.com/"
+                                                rel="external">Udemy</a></span>
+                                        <span class="tag"><a href="https://www.w3schools.com/"
+                                                             rel="external">W3Schools</a></span><span
+                                            class="tag"><a href="https://www.freecodecamp.org/"
+                                                           rel="external">freeCodeCamp</a></span>
+                                    </p>
+                                </li>
                                 <li>
                                     <div><em>1<sup>st</sup> September 2018 &ndash; present</em></div>
                                     <div><strong>Study </strong> <strong>software engineering</strong> at <a
